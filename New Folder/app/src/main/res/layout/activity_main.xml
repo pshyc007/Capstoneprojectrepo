@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="#ff7a7a7a" android:layout_width="fill_parent" android:layout_height="@dimen/ad_height">
+        <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="fill_parent" ads:adSize="SMART_BANNER" ads:adUnitId="ca-app-pub-7509536085456666/7296325783" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/line" android:background="@color/lines" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollView1" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:id="@id/layoutBig" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/inputRows" android:background="@color/foreground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <EditText android:id="@id/etHiddenEditText" android:layout_width="0.0dip" android:layout_height="0.0dip" android:inputType="number" />
+                    <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/dark_text" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/age_field" android:layout_weight="1.0" />
+                    <EditText android:textColor="@color/dark_text" android:id="@id/etAge" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+                    <Spinner android:textSize="18.0sp" android:textColor="@color/dark_text" android:gravity="bottom" android:id="@id/sGender" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:background="@color/lines" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/dark_text" android:gravity="center_vertical" android:id="@id/tvWeight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/weight_field" android:layout_weight="1.0" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etWeight" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:maxLength="6" android:inputType="numberDecimal" />
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etWeight2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/weight_2_hint" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etWeight3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/weight_3_hint" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                    </LinearLayout>
+                    <Spinner android:textSize="18.0sp" android:textColor="@color/dark_text" android:gravity="bottom" android:id="@id/sWeight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:background="@color/lines" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/dark_text" android:gravity="center_vertical" android:id="@id/tvHeight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/height_field" android:layout_weight="1.0" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etHeight" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" android:maxLength="6" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etHeight2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/height_2_hint" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                        <EditText android:textColor="@color/dark_text" android:id="@id/etHeight3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/height_3_hint" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                    </LinearLayout>
+                    <Spinner android:textColor="@color/dark_text" android:id="@id/sHeight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/line2" android:background="@color/lines" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/inputRows" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line2">
+                <RelativeLayout android:id="@id/layoutWheel" android:paddingLeft="@dimen/wheel_padding_sides" android:paddingTop="@dimen/wheel_padding_top" android:paddingRight="@dimen/wheel_padding_sides" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/wheel" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.doubletheory.bmiapp.AspectRatioImageView android:id="@id/ivWheel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wheel" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/wheel_margin" android:layout_marginBottom="@dimen/wheel_margin" android:layout_alignTop="@id/ivWheel" android:layout_alignBottom="@id/ivWheel">
+                            <LinearLayout android:orientation="vertical" android:id="@id/topSpacing" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="48.5" />
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="27.0">
+                                <LinearLayout android:orientation="vertical" android:id="@id/topLeftSpace" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="32.0" />
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+                                    <TextView android:textSize="@dimen/bmi_digits" android:textColor="@color/light_text" android:gravity="top" android:id="@id/tvBmiDigit2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="@string/bmi_digit_2" />
+                                    <TextView android:textSize="@dimen/weight_digits" android:textColor="@color/dark_text" android:gravity="top" android:id="@id/tvWeightDigit2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/weight_digit_2" android:layout_weight="1.0" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+                                    <TextView android:textSize="@dimen/bmi_digits" android:textColor="@color/light_text" android:gravity="top|right|center" android:id="@id/tvBmiDigit3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="@string/bmi_digit_3" />
+                                    <TextView android:textSize="@dimen/weight_digits" android:textColor="@color/dark_text" android:gravity="top|right|center" android:id="@id/tvWeightDigit3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/weight_digit_3" android:layout_weight="1.0" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@id/topRightSpace" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="32.0" />
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="27.0">
+                                <LinearLayout android:orientation="vertical" android:id="@id/bottomLeftSpace" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="21.0" />
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.85">
+                                    <TextView android:textSize="@dimen/bmi_digits" android:textColor="@color/light_text" android:gravity="bottom" android:id="@id/tvBmiDigit1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-5.0dip" android:text="@string/bmi_digit_1" android:layout_weight="1.0" />
+                                    <TextView android:textSize="@dimen/weight_digits" android:textColor="@color/dark_text" android:gravity="bottom" android:id="@id/tvWeightDigit1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/weight_digit_1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="30.85">
+                                    <TextView android:textSize="@dimen/bmi_digits" android:textColor="@color/light_text" android:gravity="bottom|right|center" android:id="@id/tvBmiDigit4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-5.0dip" android:text="@string/bmi_digit_4" android:layout_weight="1.0" />
+                                    <TextView android:textSize="@dimen/weight_digits" android:textColor="@color/dark_text" android:gravity="bottom|right|center" android:id="@id/tvWeightDigit4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/weight_digit_4" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@id/bottomRightSpace" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="21.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/wheel">
+                        <com.doubletheory.bmiapp.AspectRatioImageView android:layout_gravity="bottom" android:id="@id/ivPointer" android:layout_width="fill_parent" android:layout_height="@dimen/circle_size" android:src="@drawable/pointer" android:minWidth="700.0dip" />
+                    </LinearLayout>
+                    <com.doubletheory.bmiapp.AspectRatioImageView android:id="@id/ivCircle" android:layout_width="@dimen/circle_size" android:layout_height="@dimen/circle_size" android:src="@drawable/circle" android:adjustViewBounds="true" android:layout_alignBottom="@id/wheel" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/bmi_result_title_size" android:textStyle="normal" android:textColor="@color/light_text" android:gravity="center_horizontal" android:paddingTop="@dimen/bmi_result_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bmi_result_title" />
+                <TextView android:textSize="@dimen/bmi_result_size" android:textStyle="bold" android:textColor="@color/light_text" android:gravity="center" android:id="@id/tvBmi" android:paddingBottom="@dimen/bmi_result_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bmi_result_margin" android:layout_marginBottom="@dimen/bmi_result_margin" android:text="@string/bmi_result" android:includeFontPadding="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/line3" android:background="@color/lines" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:id="@id/layoutButton" android:background="@color/foreground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dark_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_margin="@dimen/button_margin" android:text="@string/button_text" android:onClick="onClickCalculate" />
+    </LinearLayout>
+</LinearLayout>

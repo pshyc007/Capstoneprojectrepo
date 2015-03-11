@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="home" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="split_action_bar">false</item>
+    <item type="id" name="action_bar_overlay_layout">false</item>
+    <item type="id" name="top_action_bar">false</item>
+    <item type="id" name="up">false</item>
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="adView">false</item>
+    <item type="id" name="line">false</item>
+    <item type="id" name="scrollView1">false</item>
+    <item type="id" name="layoutBig">false</item>
+    <item type="id" name="inputRows">false</item>
+    <item type="id" name="etHiddenEditText">false</item>
+    <item type="id" name="etAge">false</item>
+    <item type="id" name="sGender">false</item>
+    <item type="id" name="tvWeight">false</item>
+    <item type="id" name="etWeight">false</item>
+    <item type="id" name="etWeight2">false</item>
+    <item type="id" name="etWeight3">false</item>
+    <item type="id" name="sWeight">false</item>
+    <item type="id" name="tvHeight">false</item>
+    <item type="id" name="etHeight">false</item>
+    <item type="id" name="etHeight2">false</item>
+    <item type="id" name="etHeight3">false</item>
+    <item type="id" name="sHeight">false</item>
+    <item type="id" name="line2">false</item>
+    <item type="id" name="layoutWheel">false</item>
+    <item type="id" name="wheel">false</item>
+    <item type="id" name="ivWheel">false</item>
+    <item type="id" name="topSpacing">false</item>
+    <item type="id" name="topLeftSpace">false</item>
+    <item type="id" name="tvBmiDigit2">false</item>
+    <item type="id" name="tvWeightDigit2">false</item>
+    <item type="id" name="tvBmiDigit3">false</item>
+    <item type="id" name="tvWeightDigit3">false</item>
+    <item type="id" name="topRightSpace">false</item>
+    <item type="id" name="bottomLeftSpace">false</item>
+    <item type="id" name="tvBmiDigit1">false</item>
+    <item type="id" name="tvWeightDigit1">false</item>
+    <item type="id" name="tvBmiDigit4">false</item>
+    <item type="id" name="tvWeightDigit4">false</item>
+    <item type="id" name="bottomRightSpace">false</item>
+    <item type="id" name="ivPointer">false</item>
+    <item type="id" name="ivCircle">false</item>
+    <item type="id" name="tvBmi">false</item>
+    <item type="id" name="line3">false</item>
+    <item type="id" name="layoutButton">false</item>
+</resources>
